@@ -1,0 +1,33 @@
+// hjh.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include "iostream"
+#include "conio.h"
+
+using namespace std;
+
+float area_cuadrada(float lado); //prototipo de la funcion
+ void main()
+ {
+	 float area,l;
+	 // validacion de la entrada 
+	 do {
+		 cout<<"ingrese lado: ";
+		 cin>>l;
+	    }
+	while(1<=0);
+	//llamar a la funcion,se asigna una variable
+	area=area_cuadrada(l);
+	cout<<"el area del cuadrado es: "<<area;
+	getch();
+		  
+}
+
+ float area_cuadrado(float lado) //declaracion de la funcion
+ {
+	 float a;
+	 a=lado*lado;
+     return a; //devuelve la salida al programa que la llama
+ }
+
